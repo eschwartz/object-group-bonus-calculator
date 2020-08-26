@@ -46,61 +46,68 @@ console.log( employees );
 // Loop through employees array
 for (let employee of employees) {
   console.log('Looping....', employee);
-  let result = bonusCalculation(employee);
+  let result = calculateBonus(employee);
   console.log('result is', result);
 }
 
 // THE MEGA FUNCTION
-function bonusCalculation(employee) {
+function calculateBonus(employee) {
   // Calculate the bonus
-  let bonus;
+  let bonusPercentage;
   if (employee.reviewRating <= 2) {
-    bonus = 0;
+    bonusPercentage = 0;
   }
   else if (employee.reviewRating === 3) {
-    bonus = 4
+    bonusPercentage = 4
   }
   else if (employee.reviewRating === 4) {
-    bonus = 6
+    bonusPercentage = 6
   }
   else if (employee.reviewRating === 5) {
-    bonus = 10
+    bonusPercentage = 10
   }
   else {
     console.log("WARNING WARNING unexpected reviewRating", employee)
   }
 
-  console.log('bonus based on rating', employee.name, employee.reviewRating, bonus);
+  console.log('bonus based on rating', employee.name, employee.reviewRating, bonusPercentage);
 
   // Extra bonus if employee number is 4 digits long
   if (employee.employeeNumber.length === 4) {
-    bonus += 5;
-    console.log(employee.name, " has seniority, +5%", bonus);
+    bonusPercentage += 5;
+    console.log(employee.name, " has seniority, +5%", bonusPercentage);
   }
 
   // Deduct 1% for top earners
   if (employee.annualSalary > 65000) {
-    bonus -= 1;
-    console.log(employee.name, " makes too much, -1%", bonus);
+    bonusPercentage -= 1;
+    console.log(employee.name, " makes too much, -1%", bonusPercentage);
   }
 
   // Min / max bonus (13%/0%)
-  if (bonus > 13) {
-    bonus = 13;
-    console.log("reset to 13", bonus);
+  if (bonusPercentage > 13) {
+    bonusPercentage = 13;
+    console.log("reset to 13", bonusPercentage);
   }
-  if (bonus < 0) {
-    bonus = 0;
-    console.log("reset to 0", bonus);
+  if (bonusPercentage < 0) {
+    bonusPercentage = 0;
+    console.log("reset to 0", bonusPercentage);
   }
 
+  // Calculate bonus dollar amount
+  let totalBonus = employee.annualSalary * (bonusPercentage / 100);
+  console.log('total bonus', totalBonus);
 
-  // PLACEHOLDER
-  // "STUB"
+  // Calculate total compensation
+  let totalCompensation = totalBonus + Number(employee.annualSalary);
+  console.log('total comp', totalCompensation);
+
+
+  // Return bonus information
   return {
-    name: null,               // TODO
-    bonusPercentage: null,    // TODO
-    totalCompensation: null,  // TODO
-    totalBonus: null          // TODO
-  }; /// TODO
+    name: employee.name,              
+    bonusPercentage: bonusPercentage, 
+    totalCompensation: totalCompensation,
+    totalBonus: totalBonus          
+  }; 
 }
