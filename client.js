@@ -51,5 +51,12 @@ for (let employee of employees) {
 }
 
 function bonusCalculation(employee) {
-  return; /// TODO
+  // PLACEHOLDER
+  // "STUB"
+  return {
+    name: null,               // TODO
+    bonusPercentage: null,    // TODO
+    totalCompensation: null,  // TODO
+    totalBonus: null          // TODO
+  }; /// TODO
 }

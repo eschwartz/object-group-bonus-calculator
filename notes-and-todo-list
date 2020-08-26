@@ -5,7 +5,7 @@ Todo list
   [x] console.log the result
 
 [ ] THE function
-  [ ] return a new object
+  [~] return a new object
       - name
       - bonusPercentage
       - totalCompensation
