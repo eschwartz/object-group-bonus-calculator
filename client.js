@@ -87,12 +87,12 @@ function bonusCalculation(employee) {
   // Min / max bonus (13%/0%)
   if (bonus > 13) {
     bonus = 13;
+    console.log("reset to 13", bonus);
   }
   if (bonus < 0) {
     bonus = 0;
+    console.log("reset to 0", bonus);
   }
-
-  
 
 
   // PLACEHOLDER
