@@ -73,8 +73,14 @@ function bonusCalculation(employee) {
 
   // Extra bonus if employee number is 4 digits long
   if (employee.employeeNumber.length === 4) {
-    bonus +=5;
+    bonus += 5;
     console.log(employee.name, " has seniority, +5%", bonus);
+  }
+
+  // Deduct 1% for top earners
+  if (employee.annualSalary > 65000) {
+    bonus -= 1;
+    console.log(employee.name, " makes too much, -1%", bonus);
   }
 
   // PLACEHOLDER
