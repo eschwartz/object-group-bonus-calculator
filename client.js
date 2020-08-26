@@ -71,6 +71,12 @@ function bonusCalculation(employee) {
 
   console.log('bonus based on rating', employee.name, employee.reviewRating, bonus);
 
+  // Extra bonus if employee number is 4 digits long
+  if (employee.employeeNumber.length === 4) {
+    bonus +=5;
+    console.log(employee.name, " has seniority, +5%", bonus);
+  }
+
   // PLACEHOLDER
   // "STUB"
   return {

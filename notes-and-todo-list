@@ -10,12 +10,12 @@ Todo list
       - bonusPercentage
       - totalCompensation
       - totalBonus
-  [ ] Calculate bonus
+  [x] Calculate bonus
       - rating of 2 or less --> no bonus
       - 3 --> 4%
       - 4 --> 6%
       - 5 --> 10%
-  [ ] Extra bonus if 4 digits long (5%)
+  [x] Extra bonus if 4 digits long (5%)
   [ ] If income > $65k, bonus - 1%
   [ ] Max/min bonus (13%, 0%);
 
