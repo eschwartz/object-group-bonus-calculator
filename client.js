@@ -51,6 +51,26 @@ for (let employee of employees) {
 }
 
 function bonusCalculation(employee) {
+  // Calculate the bonus
+  let bonus;
+  if (employee.reviewRating <= 2) {
+    bonus = 0;
+  }
+  else if (employee.reviewRating === 3) {
+    bonus = 4
+  }
+  else if (employee.reviewRating === 4) {
+    bonus = 6
+  }
+  else if (employee.reviewRating === 5) {
+    bonus = 10
+  }
+  else {
+    console.log("WARNING WARNING unexpected reviewRating", employee)
+  }
+
+  console.log('bonus based on rating', employee.name, employee.reviewRating, bonus);
+
   // PLACEHOLDER
   // "STUB"
   return {

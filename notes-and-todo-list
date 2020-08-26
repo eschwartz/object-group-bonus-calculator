@@ -11,7 +11,7 @@ Todo list
       - totalCompensation
       - totalBonus
   [ ] Calculate bonus
-      - 2 or less --> no bonus
+      - rating of 2 or less --> no bonus
       - 3 --> 4%
       - 4 --> 6%
       - 5 --> 10%
