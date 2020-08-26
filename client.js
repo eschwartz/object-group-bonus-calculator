@@ -50,6 +50,7 @@ for (let employee of employees) {
   console.log('result is', result);
 }
 
+// THE MEGA FUNCTION
 function bonusCalculation(employee) {
   // Calculate the bonus
   let bonus;
@@ -82,6 +83,17 @@ function bonusCalculation(employee) {
     bonus -= 1;
     console.log(employee.name, " makes too much, -1%", bonus);
   }
+
+  // Min / max bonus (13%/0%)
+  if (bonus > 13) {
+    bonus = 13;
+  }
+  if (bonus < 0) {
+    bonus = 0;
+  }
+
+  
+
 
   // PLACEHOLDER
   // "STUB"

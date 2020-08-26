@@ -16,12 +16,16 @@ Todo list
       - 4 --> 6%
       - 5 --> 10%
   [x] Extra bonus if 4 digits long (5%)
-  [ ] If income > $65k, bonus - 1%
-  [ ] Max/min bonus (13%, 0%);
+  [x] If income > $65k, bonus - 1%
+  [x] Max/min bonus (13%, 0%);
 
 
 [ ] STRETCH GOALS
   ....
+
+
+Todo later:
+- slip up the mega function
 
 
 Other notes
