@@ -46,4 +46,10 @@ console.log( employees );
 // Loop through employees array
 for (let employee of employees) {
   console.log('Looping....', employee);
+  let result = bonusCalculation(employee);
+  console.log('result is', result);
+}
+
+function bonusCalculation(employee) {
+  return; /// TODO
 }

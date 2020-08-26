@@ -1,8 +1,8 @@
 Todo list
 
 [x] Loop through employees array
-  [ ] Pass employee object into a function
-  [ ] console.log the result
+  [x] Pass employee object into a function
+  [x] console.log the result
 
 [ ] THE function
   [ ] return a new object
