@@ -42,13 +42,28 @@ const employees = [
 
 console.log( employees );
 
+$(document).ready(onReady);
 
-// Loop through employees array
-for (let employee of employees) {
-  console.log('Looping....', employee);
-  let result = calculateBonus(employee);
-  console.log('result is', result);
+
+function onReady() {
+  // Loop through employees array
+  for (let employee of employees) {
+    console.log('Looping....', employee);
+    let result = calculateBonus(employee);
+    console.log('result is', result);
+
+    // Find employeeList <ul> element
+    let employeeList = $('#employeeList');
+    console.log(employeeList);
+
+    // Render employee info in <li>
+    let employeeHtml = '<li>' + employee.name + ', ' + employee.annualSalary + ', ' + result.totalBonus + '</li>';
+    // add <li> to DOM
+    employeeList.append(employeeHtml);
+  }
 }
+
+
 
 // THE MEGA FUNCTION
 function calculateBonus(employee) {

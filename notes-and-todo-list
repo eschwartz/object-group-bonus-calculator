@@ -4,8 +4,8 @@ Todo list
   [x] Pass employee object into a function
   [x] console.log the result
 
-[ ] THE function
-  [~] return a new object
+[x] THE function
+  [x] return a new object
       - name
       - bonusPercentage
       - totalCompensation
