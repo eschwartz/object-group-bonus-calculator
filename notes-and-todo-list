@@ -1,6 +1,6 @@
 Todo list
 
-[ ] Loop through employees array
+[x] Loop through employees array
   [ ] Pass employee object into a function
   [ ] console.log the result
 

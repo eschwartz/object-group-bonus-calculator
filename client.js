@@ -41,3 +41,9 @@ const employees = [
 // Ask questions when you don't.
 
 console.log( employees );
+
+
+// Loop through employees array
+for (let employee of employees) {
+  console.log('Looping....', employee);
+}
