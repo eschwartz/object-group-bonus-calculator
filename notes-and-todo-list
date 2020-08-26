@@ -1,0 +1,28 @@
+Todo list
+
+[ ] Loop through employees array
+  [ ] Pass employee object into a function
+  [ ] console.log the result
+
+[ ] THE function
+  [ ] return a new object
+      - name
+      - bonusPercentage
+      - totalCompensation
+      - totalBonus
+  [ ] Calculate bonus
+      - 2 or less --> no bonus
+      - 3 --> 4%
+      - 4 --> 6%
+      - 5 --> 10%
+  [ ] Extra bonus if 4 digits long (5%)
+  [ ] If income > $65k, bonus - 1%
+  [ ] Max/min bonus (13%, 0%);
+
+
+[ ] STRETCH GOALS
+  ....
+
+
+Other notes
+- already provided an array of employes
