@@ -58,8 +58,19 @@ function onReady() {
 
     // Render employee info in <li>
     let employeeHtml = '<li>' + employee.name + ', ' + employee.annualSalary + ', ' + result.totalBonus + '</li>';
+
+    // use template string
+    // + string interpolation
+    let betterEmployeeHtml = `
+      <tr>
+        <td>${employee.name}</td>
+        <td>${employee.annualSalary}</td>
+        <td>${result.totalBonus}</td>
+      </tr>
+    `;
+
     // add <li> to DOM
-    employeeList.append(employeeHtml);
+    employeeList.append(betterEmployeeHtml);
   }
 }
 
